@@ -36,7 +36,7 @@ void uart_init(){
 //int uart8250_init(unsigned long base, u32 in_freq, u32 baudrate, u32 reg_shift,
 //		  u32 reg_width);
     uart8250_init(VIRT_UART16550_ADDR, VIRT_UART_FREQ,
-                  VIRT_UART_BAUDRATE, UART_REG_SHIFT, UART_REG_WIDTH);
+                  VIRT_UART_BAUDRATE, VIRT_UART_REG_SHIFT, VIRT_UART_REG_WIDTH);
 }
 
 void uart_putc(char c)
